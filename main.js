@@ -14,7 +14,7 @@ window.onload = function () {
 	  dataType: "jsonp",
 	  jsonpCallback:"geoip",
 	  success: function(data) {
-	    if( screen.width <= 480 && data.country == "Germany" && data.country == "Austria") {
+	    if( screen.width <= 480 && data.country == "Germany" || data.country == "Austria") {
             $(".question").html(out);
         }
 	  }
